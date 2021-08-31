@@ -1,0 +1,10 @@
+/home/aistudio/prototypical-networks-paddle
+W0831 08:18:53.746024  2051 device_context.cc:404] Please NOTE: device: 0, GPU Compute Capability: 7.0, Driver API Version: 11.0, Runtime API Version: 10.1
+W0831 08:18:53.751042  2051 device_context.cc:422] device: 0, cuDNN Version: 7.6.
+Evaluating 5-way, 1-shot with 15 query examples/class over 600 episodes
+test:   0%|                                             | 0/600 [00:00<?, ?it/s]/opt/conda/envs/python35-paddle120-env/lib/python3.7/site-packages/paddle/tensor/creation.py:125: DeprecationWarning: `np.object` is a deprecated alias for the builtin `object`. To silence this warning, use `object` by itself. Doing this will not modify any behavior and is safe. 
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  if data.dtype == np.object:
+test: 100%|███████████████████████████████████| 600/600 [04:01<00:00,  2.49it/s]
+test loss: 1.212313 +/- 0.017060
+test acc: 0.501444 +/- 0.007776
