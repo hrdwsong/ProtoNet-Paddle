@@ -1,0 +1,6 @@
+tqdm==4.59.0
+paddlepaddle_gpu==2.1.2.post110
+numpy==1.19.3
+paddle==1.0.2
+Pillow==8.3.1
+
