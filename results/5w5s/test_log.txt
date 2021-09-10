@@ -1,10 +1,8 @@
-/home/aistudio/prototypical-networks-paddle
-W0831 08:31:53.696960  5623 device_context.cc:404] Please NOTE: device: 0, GPU Compute Capability: 7.0, Driver API Version: 11.0, Runtime API Version: 10.1
-W0831 08:31:53.701144  5623 device_context.cc:422] device: 0, cuDNN Version: 7.6.
+(paddle_gpu) F:\FormalDL\比赛\论文复现赛第四期20210810\Prototypical Networks for Few-shot Learning\prototypical-networks-paddle>python run_eval.py --model.model_path results/best_model.pdparams --data.test_way 5 --data.test_shot 5 --da
+ta.test_query 15
+W0909 08:13:58.964854 20156 device_context.cc:404] Please NOTE: device: 0, GPU Compute Capability: 8.6, Driver API Version: 11.2, Runtime API Version: 11.0
+W0909 08:13:58.972832 20156 device_context.cc:422] device: 0, cuDNN Version: 8.1.
 Evaluating 5-way, 5-shot with 15 query examples/class over 600 episodes
-test:   0%|                                             | 0/600 [00:00<?, ?it/s]/opt/conda/envs/python35-paddle120-env/lib/python3.7/site-packages/paddle/tensor/creation.py:125: DeprecationWarning: `np.object` is a deprecated alias for the builtin `object`. To silence this warning, use `object` by itself. Doing this will not modify any behavior and is safe. 
-Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
-  if data.dtype == np.object:
-test: 100%|███████████████████████████████████| 600/600 [05:04<00:00,  1.97it/s]
-test loss: 0.812719 +/- 0.015109
-test acc: 0.682867 +/- 0.006481
+test: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 600/600 [03:02<00:00,  3.29it/s]
+test loss: 0.804894 +/- 0.014917
+test acc: 0.683000 +/- 0.006517
