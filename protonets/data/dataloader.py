@@ -14,17 +14,14 @@ STD = [0.229, 0.224, 0.225]
 def get_dataloader(config, mode='train'):
     if mode == 'train':
         trfms = Compose([
-            # RandomResizedCrop((84, 84)),
-            # ColorJitter(0.4, 0.4, 0.4),
-            Resize((96, 96)),
-            CenterCrop((84, 84)),
-            RandomHorizontalFlip(),
+            Resize(84),  # 把短边按比例缩放到84
+            CenterCrop((84, 84)),  # 中心裁剪到(84,84).相比直接resize，这样做避免了形变。
             ToTensor(),
             Normalize(MEAN, STD),
         ])
     else:
         trfms = Compose([
-            Resize((96, 96)),
+            Resize(84),
             CenterCrop((84, 84)),
             ToTensor(),
             Normalize(MEAN, STD)
